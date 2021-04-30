@@ -1,8 +1,7 @@
 .informationSection {
   padding: 40px 25px 42px 26px;
 }
-.informationSection__line {
-}
+
 .informationSection__column {
   display: flex;
   flex-direction: row;
