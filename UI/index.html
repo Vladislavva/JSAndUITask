@@ -19,7 +19,13 @@
           <li class="menu__item menu__item-active"><a href="#" class="menu__item-link">HOME</a></li>
           <li class="menu__item"><a href="#" class="menu__item-link">STYLE DEMO</a></li>
           <li class="menu__item"><a href="#" class="menu__item-link">FULL WIDTH</a></li>
-          <li class="menu__item"><a href="#" class="menu__item-link">DROPDOWN</a></li>
+          <li class="menu__item menu__item-dropbtn"><a href="#" class="menu__item-link">DROPDOWN</a>
+            <div class="menu__item-dropdowns">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
           <li class="menu__item"><a href="#" class="menu__item-link">PORTFOLIO</a></li>
           <li class="menu__item"><a href="#" class="menu__item-link">GALLARY</a></li>
         </ul>
@@ -168,32 +174,126 @@
     </div>
   </section>
   <footer>
-    <div class="footer__colDetails">
-      <h4 class="colDetails__header">Company Details</h4>
-      <hr class="colDetails__line">
-      <p class="colDetails__adress">
-        Company Name <br>
-        Street Name & Number <br>
-        Town <br>
-        Postcode/Zip <br>
-      </p>
+    <div class="footer-info">
 
-      <a class="colDetails__phone" href="tel:+380111111">Tel:xxxxx xxxxx</a>
-      <a class="colDetails__fax" href="fax:+111111111">Fax:xxxxx xxxxx</a>
-      <a class="colDetails__mail" href="mailto:contact@mydomain.com">Email: <b> contact@mydomain.com</b></a>
-      <h5 class="colDetails__officeHeader">Office Hours</h5>
-      <p class="">Monday - Friday: 08:00 - 17:30 <br>
-        Saturday: 08:00 - 13:00</p>
+      <div class="footer__column">
+        <div class="footer__column-header">
+          <h5>Company Details</h5>
+        </div>
+        <div class="footer__column-info">
+          <hr class="info__line">
+          <p class="info__paragraf">Company Name</p>
+          <p class="info__paragraf">Street Name & Number</p>
+          <p class="info__paragraf">Town</p>
+          <p class="info__paragraf">Postcode/Zip</p>
+          <div class="info__contactBlock">
+            <a class="info__contactBlock-phone" href="tel:+380111111">Tel: xxxxx xxxxxxxxxx</a><br>
+            <a class="info__contactBlock-fax" href="fax:+380111111">Fax: xxxxx xxxxxxxxxx</a><br>
+            <a class="info__contactBlock-mail" href="mailto:contact@mydomain.com">Email: <b>
+                contact@mydomain.com</b></a>
+          </div>
+        </div>
+        <div class="footer__column-info">
+          <div class="info__header">
+            <h5 class="">Office Hours</h5>
+          </div>
+          <p class="info__timeWork">Monday - Friday: 08:00 - 17:30</p>
+          <p class="info__timeWork">Saturday: 08:00 - 13:00</p>
+        </div>
+      </div>
 
+      <div class="footer__column">
+        <div class="footer__column-header">
+          <h5>Stay Social</h5>
+        </div>
+        <hr class="footer__column-line">
+        <div class="footer__column-social">
+          <div class="social__linkedIn">
+            <a href="https://www.linkedin.com/" target="_blank" class="icons ln-ico"></a>
+            <a href="https://www.linkedin.com/" target="_blank" class="social__linkedIn-signature">Get linked up in
+              LinkedIn</a>
+          </div>
+          <div class="social__twitter">
+            <a href="https://twitter.com/elonmusk" target="_blank" class="icons tw-ico"></a>
+            <a href="https://twitter.com/elonmusk" target="_blank" class="social__twitter-signature">Keep up with our
+              Tweets</a>
+          </div>
+
+          <div class="social__pinterest">
+            <a href="https://www.pinterest.ru/" target="_blank" class="icons pn-ico"></a>
+            <a href="https://www.pinterest.ru/" target="_blank" class="social__pinterest-signature">Photos on
+              Pinterest</a>
+          </div>
+
+          <div class="social__rss">
+            <a href="#" target="_blank" class="icons rss-ico"></a>
+            <a href="#" target="_blank" class="social__rss-signature">RSS Feed</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer__column">
+        <div class="footer__column-header">
+          <h5>From The Blog</h5>
+        </div>
+        <hr class="footer__column-line">
+        <div class="footer__column-info">
+          <h5 class="footer__column-info-header">Blog Post Title</h5>
+          <p  class="footer__column-info-posted">Posted by Admin on 00.00.0000</p>
+          <div class="footer__column-info-paragraf">
+            <p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed facilispede
+              estibulum.</p>
+          </div>
+          <a class="footer__column-info-more" href="#">Read More »</a>
+        </div>
+        <div class="footer__column-info">
+          <div class="info__header">
+            <h5 class="footer__column-info-header">Blog Post Title</h5>
+            <p  class="footer__column-info-posted">Posted by Admin on 00.00.0000</p>
+          </div>
+          <div class="footer__column-info-paragraf">
+            <p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed facilispede
+              estibulum.</p>
+          </div>
+          <a class="footer__column-info-more" href="#">Read More »</a>
+        </div>
+      </div>
+
+      <div class="footer__column">
+        <div class="footer__column-header">
+          <h5>Contact Us</h5>
+        </div>
+        <hr class="footer__column-line">
+        <form action="#" method="post" class="footer__column-line-form">
+          <ul>
+            <li>
+              <input class="input__name" type="text" id="name" name="user_name" placeholder="Name">
+            </li>
+            <li>
+              <input class="input__mail" type="email" id="mail" name="user_mail" placeholder="Email">
+            </li>
+            <li>
+              <textarea class="input__textarea" id="msg" name="user_message" placeholder="Massage"></textarea>
+            </li>
+            <input class="form__submit" type="submit" value="Submit">
+          </ul>
+
+        </form>
+      </div>
+      
     </div>
-    <div class="footer__colSocial"></div>
-    <div class="footer__colBlog"></div>
-    <div class="footer__colForm"></div>
+ <div class="footercopy__copyriting">
+<div class="footercopy__copyriting-item">
+  <p>Copyright © 2013 Domain Name - All Rights Reserved</p>
+</div>
+<div class="footercopy__copyriting-item">
+  <p>Template by OS Templates</p>
+</div>
 
-
-
+ </div>
   </footer>
-  <br><br><br><br><br><br><br><br>
+  
 </body>
 
 

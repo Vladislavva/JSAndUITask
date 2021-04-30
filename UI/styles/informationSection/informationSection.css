@@ -37,7 +37,7 @@
   margin: 0 0 0 178px;
   font-size: 17px;
   text-decoration: none;
-  color: green;
+  color: #a7c353;
 }
 
 .column__grid {
@@ -110,9 +110,9 @@
   width: 321px;
   line-height: 1.35;
 }
-.quotes__link{
-    color:seagreen;
-    margin: 0 0 0 212px;
-    font-size: 17px;
-    text-decoration: none;
+.quotes__link {
+  color: #a7c353;
+  margin: 0 0 0 212px;
+  font-size: 17px;
+  text-decoration: none;
 }

@@ -1,82 +1,182 @@
-footer{
-    background: #313131;
-    display: flex;
-    flex-direction: row;
-    padding: 48px 0 0 0;
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #313131;
+  color: #999999;
+  height: 505px;
+  padding: 39px 0 0 0;
 }
-.footer__colDetails{
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
-.colDetails__header{
-    color: white;
-    font-weight: 100;
-    font-size: 20px;
-    margin: 0 0 21px 0;
-}
-
-
-
-.colDetails__line{
-     border: none; /* Убираем границу для браузера Firefox */
-    color: #3a3a3a; /* Цвет линии для остальных браузеров */
-    background-color:#3a3a3a; /* Цвет линии для браузера Firefox и Opera */
-    height: 2px;
-    width: 280px;
-    margin: 0;    
-}
-.colDetails__adress{
-    color: #999999;
-    margin: 18px 0 0 0;
-    line-height: 1.45;
-    font-size: 16px;
+.footer__column {
+  width: 25%;
+  height: 90%;
 }
 
-.colDetails__phone{
-    margin: 24px 0 0 0;
-    color: #999999;
-    text-decoration: none;
+.info__line {
+  margin: 20px 0 0 0;
+  border: none; /* Убираем границу для браузера Firefox */
+  color: #3a3a3a; /* Цвет линии для остальных браузеров */
+  background-color: #3a3a3a; /* Цвет линии для браузера Firefox и Opera */
+  height: 1px; /* Толщина линии */
+  width: 277px;
 }
-.colDetails__fax{
-    margin: 8px 0 0 0;
-    color: #999999;
-    text-decoration: none;
-}
-.colDetails__mail{
-    margin: 8px 0 0 0;
-    color: #999999;
-    text-decoration: none;
+.info__paragraf:nth-child(2) {
+  margin: 22px 0 0 0;
 }
 
-.colDetails__mail b{
-    color: #a7c353;
-    font-weight:100 ;
+.info__paragraf:nth-child(3) {
+  margin: 7px 0 0 0;
+}
+.info__paragraf:nth-child(4) {
+  margin: 9px 0 0 0;
+}
+.info__paragraf:nth-child(5) {
+  margin: 9px 0 0px 0;
+}
+.info__contactBlock {
+  margin: 17px 0 0 0;
+  line-height: 1.5;
+}
+.info__contactBlock-phone,
+.info__contactBlock-fax,
+.info__contactBlock-mail {
+  color: #999999;
+  text-decoration: none;
+}
+.info__contactBlock-mail b {
+  color: #a7c353;
+  font-weight: 100;
 }
 
-.colDetails__officeHeader{}
-.footer__colSocial{
-    width: 25%;
-    
-    border: 1px solid red;
+.info__header {
+  margin: 20px 0 0 0;
 }
 
-
-
-
-
-
-.footer__colBlog{
-    width: 25%;
-    border: 1px solid red;
+.info__timeWork {
+  margin: 8px 0 0 0;
 }
 
+.footer__column-line {
+  border: none; /* Убираем границу для браузера Firefox */
+  color: #3a3a3a; /* Цвет линии для остальных браузеров */
+  background-color: #3a3a3a; /* Цвет линии для браузера Firefox и Opera */
+  height: 1px; /* Толщина линии */
+  margin: 20px 0 6px 0;
+  width: 277px;
+}
 
+.footer__column-social {
+  line-height: 4.3;
+  padding: 0 0 0 7px;
+}
 
+.social__linkedIn,
+.social__twitter,
+.social__pinterest,
+.social__rss {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
-.footer__colForm{
-    width: 25%;
-    border: 1px solid red;
+.icons {
+  background: url(../../img/socialSpritesheet.png);
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.tw-ico {
+  background-position: -35px -35px;
+}
+.pn-ico {
+  background-position: -35px -1px;
+}
+.rss-ico {
+  background-position: -1px -35px;
+}
+
+.social__rss-signature,
+.social__pinterest-signature,
+.social__twitter-signature,
+.social__linkedIn-signature {
+  text-decoration: none;
+  color: #a7c353;
+}
+
+.footer__column-info-header {
+  margin: 27px 0 0 0;
+}
+.footer__column-info-posted {
+  margin: 11px 0 0 0;
+  font-size: 13px;
+}
+.footer__column-info-paragraf {
+  margin: 15px 0 4px 0;
+  line-height: 1.5;
+}
+.footer__column-info-more {
+  color: #a7c353;
+  text-decoration: none;
+  margin: 0 0 0 205px;
+}
+.footer__column-line-form {
+  margin: 23px 0 0 18px;
+}
+.footer__column-line-form input,
+.footer__column-line-form textarea {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.input__name,
+.input__mail,
+.input__textarea {
+  height: 35px;
+  width: 264px;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 0 0 0 10px;
+  border: none;
+  background: #383838;
+  color: white;
+}
+.input__mail {
+  margin: 16px 0 0 0;
+}
+.input__textarea {
+  margin: 16px 0 0 0;
+  padding: 10px 0 0 10px;
+  height: 125px;
+}
+.form__submit {
+  border-radius: 5px;
+  margin: 10px 0 0 0;
+  width: 101px;
+  height: 41px;
+  font-size: 20px;
+  color: #313131;
+  border: none;
+  background: #a7c353;
+  cursor: pointer;
+}
+.form__submit:hover {
+    background: #bbd372;
+    transition: 1s;
+}
+
+.footercopy__copyriting {
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #3a3a3a;
+  margin: 53px 0 0 0;
+  height: 65px;
 }
