@@ -1,0 +1,12 @@
+@import './reset.css';
+@import './header/header.css';
+@import './slider/slider.css';
+@import './informationSection/informationSection.css';
+@import './footer/footer.css';
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}

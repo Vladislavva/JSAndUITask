@@ -1,0 +1,82 @@
+footer{
+    background: #313131;
+    display: flex;
+    flex-direction: row;
+    padding: 48px 0 0 0;
+}
+.footer__colDetails{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.colDetails__header{
+    color: white;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 0 0 21px 0;
+}
+
+
+
+.colDetails__line{
+     border: none; /* Убираем границу для браузера Firefox */
+    color: #3a3a3a; /* Цвет линии для остальных браузеров */
+    background-color:#3a3a3a; /* Цвет линии для браузера Firefox и Opera */
+    height: 2px;
+    width: 280px;
+    margin: 0;    
+}
+.colDetails__adress{
+    color: #999999;
+    margin: 18px 0 0 0;
+    line-height: 1.45;
+    font-size: 16px;
+}
+
+.colDetails__phone{
+    margin: 24px 0 0 0;
+    color: #999999;
+    text-decoration: none;
+}
+.colDetails__fax{
+    margin: 8px 0 0 0;
+    color: #999999;
+    text-decoration: none;
+}
+.colDetails__mail{
+    margin: 8px 0 0 0;
+    color: #999999;
+    text-decoration: none;
+}
+
+.colDetails__mail b{
+    color: #a7c353;
+    font-weight:100 ;
+}
+
+.colDetails__officeHeader{}
+.footer__colSocial{
+    width: 25%;
+    
+    border: 1px solid red;
+}
+
+
+
+
+
+
+.footer__colBlog{
+    width: 25%;
+    border: 1px solid red;
+}
+
+
+
+
+.footer__colForm{
+    width: 25%;
+    border: 1px solid red;
+}

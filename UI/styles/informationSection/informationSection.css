@@ -1,0 +1,118 @@
+.informationSection {
+  padding: 40px 25px 42px 26px;
+}
+.informationSection__line {
+}
+.informationSection__column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.column__block {
+  padding: 41px 0 0 0px;
+  width: 33%;
+}
+.block__header {
+  color: #999999;
+  font-size: 26px;
+  font-weight: 100;
+}
+.block__img {
+  margin: 36px 0 0 2px;
+  width: 338px;
+  height: 176px;
+  border: 3px solid white;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(226, 226, 226, 0.96);
+  -moz-box-shadow: 0px 0px 0px 2px rgba(226, 226, 226, 0.96);
+  box-shadow: 0px 0px 0px 2px rgba(226, 226, 226, 0.96);
+}
+.block__paragraf {
+  color: #999999;
+  font-size: 17px;
+  margin: 23px 0 27px 0;
+  width: 335px;
+  line-height: 1.35;
+}
+.block__link {
+  margin: 0 0 0 178px;
+  font-size: 17px;
+  text-decoration: none;
+  color: green;
+}
+
+.column__grid {
+  width: 33%;
+  padding: 41px 0 0 41px;
+}
+.grid__header {
+  color: #999999;
+  font-size: 26px;
+  font-weight: 100;
+  margin: 0 0 34px 0;
+}
+.grid__block {
+  margin: 0 0 23px 0;
+  display: flex;
+  flex-direction: row;
+}
+.grid__block-img {
+  width: 79px;
+  height: 79px;
+}
+.grid__block-info {
+  margin: 2px 0 0 24px;
+}
+.grid__block-header {
+  color: #999999;
+}
+.grid__block-paragraf {
+  width: 217px;
+  margin: 11px 0 0 0;
+  color: #999999;
+  line-height: 1.35;
+}
+
+.column__quotes {
+  width: 33%;
+  padding: 41px 0 0 35px;
+}
+
+.quotes__header {
+  color: #999999;
+  font-size: 26px;
+  font-weight: 100;
+  margin: 0 0 0 9px;
+}
+.quotes__infoblock {
+  margin: 8px 0 0 0;
+}
+.quotes__infoblock-item {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+
+.quotes__infoblock-item b {
+  font-size: 155px;
+  height: 80px;
+  color: #999999;
+}
+.item__header {
+  color: #999999;
+  font-size: 18px;
+  font-weight: 100;
+  margin: 0 0 1px 8px;
+}
+.item__paragraf {
+  color: #999999;
+  margin: 0px 0 11px 8px;
+  width: 321px;
+  line-height: 1.35;
+}
+.quotes__link{
+    color:seagreen;
+    margin: 0 0 0 212px;
+    font-size: 17px;
+    text-decoration: none;
+}
