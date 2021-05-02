@@ -12,9 +12,8 @@
   width: 74%;
   line-height: 1.5;
   margin: 44px 0 46px 0;
+  color: #999999;
 }
-
-/* Собственно сам слайдер */
 
 .sliderSection__slider {
   max-width: 1200px;
@@ -24,7 +23,7 @@
   width: 1150px;
   margin-bottom: 15px;
 }
-/* Картинка мастабируется по отношению к родительскому элементу */
+
 .sliderSection__slider .item img {
   object-fit: cover;
   width: 100%;
@@ -32,19 +31,15 @@
   border: none !important;
   box-shadow: none !important;
 }
-/* Кнопки вперед и назад */
+
 .sliderSection__slider .prev,
 .sliderSection__slider .next {
   cursor: pointer;
   position: absolute;
-  /* height:35px ;
-  width:35px ; */
   top: 47%;
-  /* width: auto; */
   margin-top: -29px;
   padding: 9px 21px 12px 18px;
   color: #a7c353;
-
   font-weight: bold;
   font-size: 41px;
   transition: 0.6s ease;
@@ -55,23 +50,11 @@
 .sliderSection__slider .next {
   right: 1%;
 }
-/* При наведении на кнопки добавляем фон кнопок */
+
 .sliderSection__slider .prev:hover,
 .sliderSection__slider .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-/* Заголовок слайда */
-/* .slideText {
-  position: absolute;
-  color: #fff;
-  font-size: 35px;
-  /* Выравнивание текста по горизонтали и по вертикали*/
-/* left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); */
-/* Тень*/
-/* text-shadow: 1px 1px 1px #000, 0 0 1em #000;
-} */
 
 .item__infoBlock {
   position: absolute;
@@ -92,7 +75,6 @@
   padding: 16px 0 16px 13px;
 }
 
-/* Кружочки */
 .slider-dots {
   margin: 10px 0 0 3px;
   text-align: center;
@@ -114,7 +96,7 @@
   background: #fff;
   border: 3px solid #a7c353;
 }
-/* Анимация слайдов */
+
 .sliderSection__slider .item {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -136,5 +118,64 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sliderSection__slider {
+    width: 979px;
+  }
+}
+
+@media (max-width: 823px) {
+  .sliderSection__slider {
+    width: 800px;
+  }
+  .item__infoBlock {
+    width: 340px;
+  }
+  .infoBlock__header {
+    font-size: 20px;
+    padding: 8px 0px 8px 9px;
+  }
+  .infoBlock__item {
+    font-size: 13px;
+  }
+  .sliderSection__slider .prev {
+    right: 91%;
+  }
+}
+@media (max-width: 768px) {
+  .sliderSection__header {
+    font-size: 24px;
+
+    margin: 79px 0 27px 0;
+  }
+  .sliderSection__slider {
+    width: 750px;
+  }
+  .infoBlock__header {
+    font-size: 17px;
+  }
+  .item__infoBlock {
+    width: 308px;
+  }
+  .infoBlock__item {
+    font-size: 11px;
+  }
+}
+@media (max-width: 320px) {
+  .sliderSection__header {
+    width: 100%;
+    margin: 250px 0 27px 0;
+  }
+  .sliderSection__slider {
+    width: 320px;
+  }
+  .sliderSection__slider .prev {
+    right: 79%;
+  }
+  .item__infoBlock {
+    display: none;
   }
 }

@@ -4,13 +4,13 @@ footer {
   justify-content: center;
   background-color: #313131;
   color: #999999;
-  height: 505px;
   padding: 39px 0 0 0;
 }
 .footer-info {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: nowrap;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -19,13 +19,18 @@ footer {
   height: 90%;
 }
 
+.footer__column-line,
+.info__line {
+  border: none;
+  color: #3a3a3a;
+  background-color: #3a3a3a;
+  height: 1px;
+
+  width: 277px;
+}
+
 .info__line {
   margin: 20px 0 0 0;
-  border: none; /* Убираем границу для браузера Firefox */
-  color: #3a3a3a; /* Цвет линии для остальных браузеров */
-  background-color: #3a3a3a; /* Цвет линии для браузера Firefox и Opera */
-  height: 1px; /* Толщина линии */
-  width: 277px;
 }
 .info__paragraf:nth-child(2) {
   margin: 22px 0 0 0;
@@ -64,12 +69,7 @@ footer {
 }
 
 .footer__column-line {
-  border: none; /* Убираем границу для браузера Firefox */
-  color: #3a3a3a; /* Цвет линии для остальных браузеров */
-  background-color: #3a3a3a; /* Цвет линии для браузера Firefox и Opera */
-  height: 1px; /* Толщина линии */
   margin: 20px 0 6px 0;
-  width: 277px;
 }
 
 .footer__column-social {
@@ -144,7 +144,7 @@ footer {
   padding: 0 0 0 10px;
   border: none;
   background: #383838;
-  color: white;
+  color: #fff;
 }
 .input__mail {
   margin: 16px 0 0 0;
@@ -166,8 +166,12 @@ footer {
   cursor: pointer;
 }
 .form__submit:hover {
-    background: #bbd372;
-    transition: 1s;
+  background: #bbd372;
+  transition: 1s;
+}
+.form__submit:active {
+  background: #6c7e36;
+  transition: 0.5s;
 }
 
 .footercopy__copyriting {
@@ -179,4 +183,32 @@ footer {
   border-top: 1px solid #3a3a3a;
   margin: 53px 0 0 0;
   height: 65px;
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    padding: 39px 0 0 162px;
+  }
+  .footer-info {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__column {
+    width: 50%;
+  }
+}
+
+@media (max-width: 823px) {
+  footer {
+    padding: 39px 0 0 47px;
+  }
+}
+
+@media (max-width: 320px) {
+  footer {
+    padding: 39px 0 0 2px;
+  }
+  .footer__column {
+    width: 100%;
+  }
 }

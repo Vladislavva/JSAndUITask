@@ -12,9 +12,10 @@ window.onload = async function () {
     const result = list.filter(
       (item) => item.name[0] === event.target.innerText 
     );
+    if(result.length> 0){
     result.map((char) => {
       divForResult.append(char.name + ", ");
-    });
+    });} else divForResult.append("no match");
   };
 
   (function randomLetters() {
