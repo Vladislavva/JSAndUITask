@@ -1,5 +1,6 @@
 .informationSection {
   padding: 40px 25px 42px 26px;
+  color: #999999;
 }
 
 .informationSection__column {
@@ -10,18 +11,6 @@
 .column__block {
   padding: 41px 0 0 0px;
   width: 33%;
-}
-
-.block__header,
-.block__paragraf,
-.grid__header,
-.grid__block-header,
-.grid__block-paragraf,
-.quotes__header,
-.quotes__infoblock-item b,
-.item__header,
-.item__paragraf {
-  color: #999999;
 }
 
 .block__header {
@@ -146,45 +135,49 @@
   }
   .quotes__link {
     margin: 0 0 0 118px;
-}
+  }
 }
 @media (max-width: 768px) {
-  .block__header,.quotes__header, .quotes__header {
+  .block__header,
+  .quotes__header,
+  .quotes__header {
     margin: 0 0 0 0;
-  text-align: center;
-}
+    text-align: center;
+  }
   .block__link {
     margin: 0 0 0 82px;
-}
- 
-.quotes__link {
-  margin: 0 0 0 102px;
-}
-.item__header {
-  font-size: 17px;}
+  }
+
+  .quotes__link {
+    margin: 0 0 0 102px;
+  }
+  .item__header {
+    font-size: 17px;
+  }
 }
 @media (max-width: 320px) {
   .block__img {
-
-    width: 311px;}
-    .block__paragraf, .item__paragraf {
-text-align: center;
-      width: 320px;}
+    width: 311px;
+  }
+  .block__paragraf,
+  .item__paragraf {
+    text-align: center;
+    width: 320px;
+  }
   .informationSection__column {
     justify-content: flex-start;
-  
+
     align-items: flex-start;
   }
 
-  .column__grid, .column__quotes, .column__block {
+  .column__grid,
+  .column__quotes,
+  .column__block {
     width: 100%;
     padding: 41px 0 0 0px;
-}
- 
-.item__paragraf {
-  margin: 0px 0 11px 0px;
-}
+  }
 
-  
+  .item__paragraf {
+    margin: 0px 0 11px 0px;
+  }
 }
-
