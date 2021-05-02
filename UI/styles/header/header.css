@@ -9,6 +9,7 @@
 .header__logo {
   line-height: 0.9;
   margin: 8px 0 0 23px;
+  color: #999999;
 }
 .logo__title,
 .logo__subtitle {
