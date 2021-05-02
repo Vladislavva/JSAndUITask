@@ -4,18 +4,19 @@ window.onload = async function () {
 
   const response = await fetch("list.json");
   const list = await response.json();
-  
+
   const letterHandler = (event) => {
     while (divForResult.firstChild) {
       divForResult.removeChild(divForResult.firstChild);
     }
     const result = list.filter(
-      (item) => item.name[0] === event.target.innerText 
+      (item) => item.name[0] === event.target.innerText
     );
-    if(result.length> 0){
-    result.map((char) => {
-      divForResult.append(char.name + ", ");
-    });} else divForResult.append("no match");
+    if (result.length > 0) {
+      result.map((char) => {
+        divForResult.append(char.name + ", ");
+      });
+    } else divForResult.append("no match");
   };
 
   (function randomLetters() {
@@ -29,8 +30,8 @@ window.onload = async function () {
       var charBlock = document.createElement("div");
       charBlock.classList.add("letter")
       charBlock.textContent = char;
-      charBlock.addEventListener('click',letterHandler, false)
+      charBlock.addEventListener('click', letterHandler, false)
       divForLetters.appendChild(charBlock);
     });
-  })() 
+  })()
 };
